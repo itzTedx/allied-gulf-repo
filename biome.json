@@ -101,6 +101,10 @@
         "useNamespaceKeyword": "error",
         "noDuplicateJsxProps": "error"
       }
+    },
+    "domains": {
+      "next": "recommended",
+      "react": "recommended"
     }
   },
   "javascript": {
@@ -118,6 +122,13 @@
   },
 
   "html": { "formatter": { "selfCloseVoidElements": "always" } },
+
+  "css": {
+    "parser": {
+      "tailwindDirectives": true
+    }
+  },
+
   "assist": {
     "enabled": true,
     "actions": {
@@ -132,10 +143,16 @@
               ["next", "next/**"],
               ":BLANK_LINE:",
 
-              [":PACKAGE:", "!@ziron", "!@ziron/**"],
+              [":PACKAGE:", "!@agcs", "!@agcs/**"],
               ":BLANK_LINE:",
 
-              ["@ziron", "@ziron/**"],
+              ["@agcs", "@agcs/**"],
+              ":BLANK_LINE:",
+
+              ["@", "@/components/**"],
+              ":BLANK_LINE:",
+
+              ["@", "@/assets/**"],
               ":BLANK_LINE:",
 
               ":ALIAS:",
