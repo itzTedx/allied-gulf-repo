@@ -1,5 +1,5 @@
 {
-  "name": "agcs-repo",
+  "name": "@agcs",
   "version": "0.0.1",
   "private": true,
   "scripts": {
@@ -10,7 +10,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^2.3.5",
-    "@workspace/typescript-config": "workspace:*",
+    "@agcs/tsconfig": "workspace:*",
     "prettier": "^3.6.2",
     "turbo": "^2.5.5",
     "typescript": "5.7.3"
